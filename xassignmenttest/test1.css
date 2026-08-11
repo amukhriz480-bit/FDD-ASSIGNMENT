@@ -58,6 +58,14 @@ a
     height: 18px;
 }
 
+#headersignup
+{
+    font-family: NewFont;
+    font-size: 18px;
+    height: 45px;
+    width: 150px;
+    border: 1px;
+}
 
 
 .footer1
