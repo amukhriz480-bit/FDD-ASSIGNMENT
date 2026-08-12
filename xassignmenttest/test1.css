@@ -83,6 +83,7 @@ footer
     justify-content: space-between;
 }
 
+
 .footersp > p > a
 {
     color: white;
@@ -148,6 +149,7 @@ footer
 #footer1 > img
 {
     height: 35px;
+    filter: invert(1);
 }
 
 #footer2
