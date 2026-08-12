@@ -21,7 +21,7 @@ body
 
 header
 {
-    padding: 10px 0px 10px 50px;
+    padding: 10px 50px 10px 50px;
     background-color: white;
     display: flex;
     font-family: NewFont;
@@ -45,7 +45,6 @@ a
 #headernav
 {
     font-size: 18px;
-    padding-right: 100px;
 }
 
 #headernav > a
@@ -118,9 +117,8 @@ footer
 
 #footersp > li > img
 {
-    height: 50px;
+    height: 100px;
     padding-right: 10px;
-    filter: invert(1);
 }
 
 #footercomp
