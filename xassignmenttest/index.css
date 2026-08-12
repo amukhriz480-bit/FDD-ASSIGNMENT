@@ -32,13 +32,137 @@ body
 
 #undertext {
     font-size: 20px;
-    padding-left: 30px;
+    padding-left: 10px;
 }
 
 br {
     padding: 0;
 }
 
+section{
+    background-color: white;
+    padding: 20px 20px 0px 20px;
+}
+.events {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Mobile default */
+    gap: 24px;
+    padding: 20px 50px;
+}
+
+/* Responsive Grid: 2 columns on tablet, 4 columns on desktop */
+@media (min-width: 768px) {
+    .events {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .events {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Card Styling */
+.event-wrapper {
+    background: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-wrapper:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+/* Image Section */
+.event-image {
+    display: block;
+    width: 100%;
+}
+
+.event-image .image {
+    width: 100%;
+    aspect-ratio: 5 / 3; /* Matches the 400x240 resolution perfectly */
+    background-color: #f4f4f4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Body Content */
+.event-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Ensures buttons/meta align at the bottom */
+}
+
+/* Title Styling */
+.event-content .title {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #213059; /* Dark navy blue from the image */
+    text-decoration: none;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.event-content .title:hover {
+    color: #d11e33; /* Slight hover effect */
+}
+
+/* Location Text and Icon */
+.event-content .location {
+    font-size: 0.9rem;
+    color: #d11e33; /* Red color matching the pin and text */
+    margin-bottom: 25px;
+    flex-grow: 1; /* Pushes the meta footer to the bottom of the card */
+    display: flex;
+    align-items: flex-start;
+    gap: 8px; /* Space between icon and text */
+}
+
+.event-content .location i {
+    margin-top: 3px; /* Aligns the icon with the first line of text */
+}
+
+/* Card Footer (Date and Status) */
+.event-meta {
+    border-top: 1px solid #f0f0f0; /* Light gray divider line */
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-meta .date {
+    font-size: 0.85rem;
+    color: #8c8c8c;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.event-meta .status {
+    font-size: 1.25rem;
+    color: #213059; /* Dark navy blue ticket icon */
+    transform: rotate(-15deg); /* Matches the slightly angled ticket in the image */
+}
+
+/* Show More Button Alignment */
+.event-cta {
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+}
 
 
 /* FOOTER AND HEADER*/
@@ -171,6 +295,7 @@ footer
 #footer1 > img
 {
     height: 35px;
+    filter: invert(1);
 }
 
 #footer2
