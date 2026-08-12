@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link href="Dashboard.css" rel="stylesheet"/>
+    <link href="logothumbnail.png" rel="icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+    <header>
+        <a href="https://www.youtube.com" id="headermain">
+            <img src="logo1.png"/>
+        </a>
+        <nav id="headernav">
+            <a href="test2.html">Events</a>
+            <a href="test2.html">Announcements</a>
+            <a href="test2.html">gallery</a>
+            <a href="test2.html">about us</a>
+            <a href="test2.html">contact us</a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="instagram.png"></a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="tik-tok.png"></a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="whatsapp.png"></a>
+        </nav>
+        <a href="test2.html"><img id="headeruser" src="guestpic.png"></a>
+    </header>
+
+    <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="user-profile">
+                <div class="avatar"><i class="fas fa-user-circle"></i></div>
+                <h3 id="userName">Participant Name</h3>
+                <p>ID: <span id="userId">10293</span></p>
+            </div>
+            <nav class="dash-nav">
+                <!-- Added IDs and onclick events -->
+                <a href="#" id="link-schedule" class="active" onclick="switchTab('schedule')">
+                    <i class="far fa-calendar-alt"></i> My Schedule
+                </a>
+                <a href="#" id="link-submissions" onclick="switchTab('submissions')">
+                    <i class="fas fa-file-upload"></i> Submissions
+                </a>
+                <a href="Login.html" class="logout">
+                    <i class="fas fa-sign-out-alt"></i> Log Out
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="dash-content">
+            <!-- Personalized Schedule Section -->
+            <section id="schedule" class="dash-section">
+                <h2>Your Itinerary</h2>
+                <div class="schedule-card">
+                    <div class="time">09:00 AM</div>
+                    <div class="details">
+                        <h4>Opening Ceremony & Briefing</h4>
+                        <p>Location: Main Hall</p>
+                    </div>
+                </div>
+                <div class="schedule-card">
+                    <div class="time">10:30 AM</div>
+                    <div class="details">
+                        <h4>Group Activity: Island Trekking</h4>
+                        <p>Location: Base Camp Trail</p>
+                    </div>
+                </div>
+                <div class="schedule-card">
+                    <div class="time">01.30 PM</div>
+                    <div class="details">
+                        <h4>Group Activity: Ziplining</h4>
+                        <p>Location: Ziplining Camp</p>
+                    </div>
+                </div>
+                <div class="schedule-card">
+                    <div class="time">03.00PM</div>
+                    <div class="details">
+                        <h4>Individual Activity: Snorkeling</h4>
+                        <p>Location: Langkawi Beach</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Submission Portal Section -->
+            <section id="submissions" class="dash-section" style="display: none;">
+                <h2>Upload Documents</h2>
+                <div class="upload-box">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Drag and drop your signed consent forms here</p>
+                    <button class="solid-btn">Select File</button>
+                </div>
+            </section>
+        </main>
+</div>
+<script src="dashboard.js"></script>
+
+    <footer>
+        <div class="footer1">
+            <ul id="footercomp"> Company
+                <li><br/></li>
+                <li><a href="test2.html">About Us</a></li>
+                <li><a href="test2.html">Contact Us</a></li>
+                <li><a href="test2.html">FAQ</a></li>
+            </ul>
+            <div class="footersp">
+                <p><a href="test2.html">Sponsors and Partners</a></p>
+                <ul id="footersp">
+                    <li><img src="APU-Logo_Final_Vertical_V1_HR1-copy-2739783303.png" id="footerapu"></li>
+                    <li><img src="MSR_logo_1-2395494865.png" id="footermsr"></li>
+                    <li><img src="columbia.png" id="footercol"></li>
+                    <li><img src="Vibe_Logo-3879676757.png" id="footervibe"></li>
+                </ul>
+            </div>
+            <ul id="footerresource"> Resources
+                <li><br/></li>
+                <li><a href="test2.html">Download Resources</a></li>
+                <li><br/></li>
+                <li><a href="test2.html">Give us your feedback!</a></li>
+            </ul>
+        </div>
+        <div class="footer2">
+            <a href="https://www.youtube.com" id="footer1">
+                <img src="logo2.png"/>
+            </a>
+            <p id="footer2">
+                Copyright explore langkawi 2026. All rights reserved
+            </p>
+            <p id="footer3">
+                Connect with us
+            </p>
+            <nav id="footer4">
+                <a href="https://www.instagram.com"><img src="instagram.png"></a>
+                <a href="https://www.instagram.com"><img src="tik-tok.png"></a>
+                <a href="https://www.instagram.com"><img src="whatsapp.png"></a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

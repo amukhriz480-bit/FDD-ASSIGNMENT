@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link href="Login.css" rel="stylesheet"/>
+    <link href="logothumbnail.png" rel="icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body >
+    <header>
+        <a href="https://www.youtube.com" id="headermain">
+            <img src="logo1.png"/>
+        </a>
+        <nav id="headernav">
+            <a href="test2.html">Events</a>
+            <a href="test2.html">Announcements</a>
+            <a href="test2.html">gallery</a>
+            <a href="test2.html">about us</a>
+            <a href="test2.html">contact us</a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="instagram.png"></a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="tik-tok.png"></a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="whatsapp.png"></a>
+        </nav>
+        <a href="test2.html"><img id="headeruser" src="guestpic.png"></a>
+    </header>
+
+    <div class="auth-container">
+    <div class="panel right-panel">
+        <h2>Login to your account</h2>
+        <p>Login to see more upcoming event happening in Langkawi!</p>
+    </div>
+
+    <div class="panel left-panel">
+        <h2>Login</h2>
+        
+        <form action="#" onsubmit="goToDashboard(event)">
+            <div class="input-group">
+                <i class="far fa-envelope"></i>
+                <input type="text" placeholder="Username" required />
+            </div>
+            
+    
+            <div class="input-group" style="position: relative;">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="passInput" placeholder="Password" required />
+                <!-- Eye Icon-->
+                <i class="far fa-eye" id="togglePassword" style="position: absolute; right: 15px; cursor: pointer; color: #a3a3a3;"></i>
+            </div>
+
+            <!-- Helpful Extras -->
+            <div class="form-extras" style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin: 10px 0 20px 0;">
+                <!-- Replaced with custom-checkbox structure -->
+                <label class="custom-checkbox" style="padding: 0; font-size: 14px;">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    Remember me
+                </label>
+                
+                <a href="#" style="color: rgb(0, 0, 122); text-decoration: none; font-size: 14px;">Forgot Password?</a>
+            </div>
+
+            <!-- Data Regulation Compliance -->
+            <div class="privacy-consent" style="margin-bottom: 25px; text-align: left; width: 100%;">
+                <!-- Replaced with custom-checkbox structure -->
+                <label class="custom-checkbox" style="padding: 0; font-size: 12px; line-height: 1.4; align-items: flex-start;">
+                    <input type="checkbox" required>
+                    <!-- Added min-width so long text doesn't squash the box -->
+                    <span class="checkmark" style="min-width: 24px; margin-top: -2px;"></span> 
+                    I agree to the processing of my personal data in accordance with PDPA/GDPR regulations.
+                </label>
+            </div>
+            
+            <!-- submit -->
+            <button type="submit" class="solid-btn">LOGIN</button>
+        </form>
+    </div>
+</div>
+<script src="Login.js"></script>
+
+    <footer>
+        <div class="footer1">
+            <ul id="footercomp"> Company
+                <li><br/></li>
+                <li><a href="test2.html">About Us</a></li>
+                <li><a href="test2.html">Contact Us</a></li>
+                <li><a href="test2.html">FAQ</a></li>
+            </ul>
+            <div class="footersp">
+                <p><a href="test2.html">Sponsors and Partners</a></p>
+                <ul id="footersp">
+                    <li><img src="APU-Logo_Final_Vertical_V1_HR1-copy-2739783303.png" id="footerapu"></li>
+                    <li><img src="MSR_logo_1-2395494865.png" id="footermsr"></li>
+                    <li><img src="columbia.png" id="footercol"></li>
+                    <li><img src="Vibe_Logo-3879676757.png" id="footervibe"></li>
+                </ul>
+            </div>
+            <ul id="footerresource"> Resources
+                <li><br/></li>
+                <li><a href="test2.html">Download Resources</a></li>
+                <li><br/></li>
+                <li><a href="test2.html">Give us your feedback!</a></li>
+            </ul>
+        </div>
+        <div class="footer2">
+            <a href="https://www.youtube.com" id="footer1">
+                <img src="logo2.png"/>
+            </a>
+            <p id="footer2">
+                Copyright explore langkawi 2026. All rights reserved
+            </p>
+            <p id="footer3"> 
+                Connect with us
+            </p>
+            <nav id="footer4">
+                <a href="https://www.instagram.com"><img src="instagram.png"></a>
+                <a href="https://www.instagram.com"><img src="tik-tok.png"></a>
+                <a href="https://www.instagram.com"><img src="whatsapp.png"></a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

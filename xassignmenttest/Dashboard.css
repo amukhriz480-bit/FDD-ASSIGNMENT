@@ -1,0 +1,350 @@
+
+/* Base Dashboard Styling */
+body {
+    margin: 0;
+    background-color: #f4f8f7; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 260px;
+    background: rgb(0, 0, 122); 
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-profile {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.avatar {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #3bb19b;
+}
+
+.dash-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.dash-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s;
+}
+
+.dash-nav a:hover, .dash-nav a.active {
+    background: rgb(6, 6, 187);
+    border-left: 4px solid white;
+}
+
+/* Main Content Area */
+.dash-content {
+    flex-grow: 1;
+    padding: 40px;
+    background: #f4f8f7;
+}
+
+.dash-section {
+    animation: fadeIn 0.4s ease-in-out; /* Smooth transition when clicking tabs */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.dash-content h2 {
+    color: #213059;
+    border-bottom: 2px solid rgb(0, 0, 122);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* Schedule Cards */
+.schedule-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-left: 4px solid rgb(0, 0, 122);
+}
+
+.schedule-card .time {
+    font-weight: bold;
+    color: rgb(0, 0, 122);
+    width: 100px;
+}
+
+.schedule-card .details h4 {
+    margin: 0 0 5px 0;
+    color: #213059;
+}
+
+.schedule-card .details p {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Upload Box */
+.upload-box {
+    background: white;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 50px;
+    text-align: center;
+    color: #777;
+    margin-top: 20px;
+}
+
+.upload-box i {
+    font-size: 40px;
+    color: rgb(0, 0, 122);
+    margin-bottom: 15px;
+}
+
+.solid-btn {
+    background: rgb(0, 0, 122);
+    border: none;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.2s;
+}
+
+.solid-btn:hover {
+    background: rgb(6, 6, 187);
+}
+
+/* FOOTER AND HEADER*/
+
+header
+{
+    padding: 10px 50px 10px 50px;
+    background-color: white;
+    display: flex;
+    font-family: NewFont;
+    align-items: center;
+    top: 0;
+    justify-content: space-between;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: goldenrod;
+}
+
+#headermain > img
+{
+    height: 60px;
+}
+
+
+#headernav
+{
+    font-size: 18px;
+    margin-left: auto;
+}
+
+#headernav > a
+{
+    margin-left: 20px;
+}
+
+#headersoc
+{
+    height: 18px;
+}
+
+#headeruser
+{
+    height: 55px;
+    width: 55px;
+    margin-left: 25px;
+}
+
+footer
+{
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+.footersp > p > a
+{
+    color: white;
+    font-size: 20px;
+}
+
+.footersp > p > a:hover
+{
+    color: goldenrod;
+}
+
+#footerresource
+{
+    list-style-type: none;
+    font-size: 20px;
+    padding: 0;
+    padding-right: 60px;
+}
+#footerresource > li > a
+{
+    font-size: 18px;
+    color: white;
+}
+
+#footerresource > li > a:hover
+{
+    color: goldenrod;
+}
+
+
+#footersp
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+#footersp > li
+{
+    display:inline;
+}
+
+#footerapu 
+{
+    height: 100px;
+    padding-right: 10px;
+}
+
+#footercol
+{
+    height: 100px;
+    width: 150px;
+    padding-right: 10px;
+    object-fit: cover;
+    object-position: 0px -10px;
+}
+
+
+#footermsr
+{
+    height: 90px;
+    width: 120px;
+    object-fit: contain;
+    padding-right: 10px;
+}
+
+#footervibe
+{
+    height: 80px;
+    width: 120px;
+    object-fit: contain;
+    padding-right: 10px;
+    filter: invert(1);
+}
+
+#footercomp
+{
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+#footercomp > li > a
+{
+    font-size: 18px;
+    color: white;
+}
+
+#footercomp > li > a:hover
+{
+    color:goldenrod
+}
+
+.footer2
+{
+    padding: 10px 50px 10px 50px;
+    background-color: rgb(0, 0, 122);
+    font-family: NewFont;
+    display: flex ;
+    align-items: center;
+}
+
+.footer1
+{
+    padding: 10px 50px 10px 50px;
+    background-color: rgb(0, 0, 122);
+    font-family: NewFont;
+    display: flex ;
+    color: white;
+    justify-content: space-between;
+}
+
+
+
+#footer1 > img
+{
+    height: 35px;
+    filter: invert(1);
+}
+
+#footer2
+{
+    color: white;
+    margin-left: 10px;
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+#footer3
+{
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+#footer4 > a > img
+{
+    height: 18px;
+    filter: invert(1);
+    padding-left: 10px;
+}
+
+
+@font-face
+{
+    font-family: NewFont;
+    src: url(Bebas-Regular.ttf);
+}
