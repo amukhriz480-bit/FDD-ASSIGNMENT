@@ -1,33 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>test</title>
-    <link href="test1.css" rel="stylesheet"/>
+    <title>Registration</title>
+    <link href="Regitration.css" rel="stylesheet"/>
+    <link href="logothumbnail.png" rel="icon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
-<body>
+<body >
     <header>
         <a href="https://www.youtube.com" id="headermain">
-            <img src="Icon_pien_cat.png"/>
+            <img src="logo1.png"/>
         </a>
         <nav id="headernav">
             <a href="test2.html">Events</a>
-            <a href="test2.html">Activities</a>
+            <a href="test2.html">Announcements</a>
             <a href="test2.html">gallery</a>
             <a href="test2.html">about us</a>
             <a href="test2.html">contact us</a>
-            <a href="https://www.instagram.com"><img src="instagram.png"></a>
-            <a href="https://www.instagram.com"><img src="tik-tok.png"></a>
-            <a href="https://www.instagram.com"><img src="whatsapp.png"></a>
-            <a href="test2.html">
-                <button type="button" id="headersignup">Log In / Register</button>
-            </a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="instagram.png"></a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="tik-tok.png"></a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="whatsapp.png"></a>
         </nav>
+        <a href="test2.html"><img id="headeruser" src="guestpic.png"></a>
     </header>
 
-    <div class="masuksini1">
-        <img src="784e731a3999e99157b1c6b2b9fbc9e7.jpg"/>
+    <div class="auth-container">
+    <!-- Left Green Panel -->
+    <div class="panel left-panel">
+        <h2>Welcome!</h2>
+        <p>Register your private information to book reservation for upcoming events!</p>
     </div>
+
+    <!-- Right White Panel -->  
+    <div class="panel right-panel">
+        <h2>Register for Event</h2>
+        
+        <form action="#">
+            <div class="input-group">
+                <i class="far fa-user"></i>
+                <input type="text" placeholder="Name" required />
+            </div>
+            <div class="input-group">
+                <i class="far fa-envelope"></i>
+                <input type="email" placeholder="Email" required />
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="phone" placeholder="Phone Number" required />
+            </div>
+
+            <div class="checkbox-container">
+                <label class="custom-checkbox"><input name="dummy" type="checkbox" value="camping"><span class="checkmark"></span>Camping</label>
+                <label class="custom-checkbox"><input name="dummy" type="checkbox" value="camping"><span class="checkmark"></span>Kayaking</label>
+                <label class="custom-checkbox"><input name="dummy" type="checkbox" value="camping"><span class="checkmark"></span>Trekking</label>
+                <label class="custom-checkbox"><input name="dummy" type="checkbox" value="camping"><span class="checkmark"></span>Ziplining </label>
+            </div>
+            
+            <button class="solid-btn">SIGN UP</button>
+        </form>
+    </div>
+</div>
 
     <footer>
         <div class="footer1">
@@ -40,25 +72,27 @@
             <div class="footersp">
                 <p><a href="test2.html">Sponsors and Partners</a></p>
                 <ul id="footersp">
-                    <li><img src="instagram.png"></li>
-                    <li><img src="instagram.png"></li>
-                    <li><img src="instagram.png"></li>
-                    <li><img src="instagram.png"></li>
+                    <li><img src="APU-Logo_Final_Vertical_V1_HR1-copy-2739783303.png" id="footerapu"></li>
+                    <li><img src="MSR_logo_1-2395494865.png" id="footermsr"></li>
+                    <li><img src="columbia.png" id="footercol"></li>
+                    <li><img src="Vibe_Logo-3879676757.png" id="footervibe"></li>
                 </ul>
             </div>
             <ul id="footerresource"> Resources
                 <li><br/></li>
                 <li><a href="test2.html">Download Resources</a></li>
+                <li><br/></li>
+                <li><a href="test2.html">Give us your feedback!</a></li>
             </ul>
         </div>
         <div class="footer2">
             <a href="https://www.youtube.com" id="footer1">
-                <img src="Icon_pien_cat.png"/>
+                <img src="logo2.png"/>
             </a>
             <p id="footer2">
-                Copyright AdeyBana 2026. All rights reserved
+                Copyright explore langkawi 2026. All rights reserved
             </p>
-            <p id="footer3">
+            <p id="footer3"> 
                 Connect with us
             </p>
             <nav id="footer4">
