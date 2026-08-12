@@ -164,6 +164,16 @@ section{
     width: 100%;
 }
 
+a:hover
+{
+    color: goldenrod;
+}
+
+.footersp > p > a:hover
+{
+    color: goldenrod;
+}
+
 
 /* FOOTER AND HEADER*/
 
@@ -242,12 +252,17 @@ footer
     list-style-type: none;
     font-size: 20px;
     padding: 0;
-    padding-right: 55px;
+    padding-right: 60px;
 }
 #footerresource > li > a
 {
     font-size: 18px;
     color: white;
+}
+
+#footerresource > li > a:hover
+{
+    color: goldenrod;
 }
 
 #footersp
@@ -262,12 +277,44 @@ footer
     display:inline;
 }
 
-#footersp > li > img
+#footerapu 
 {
-    height: 50px;
+    height: 100px;
+    padding-right: 10px;
+}
+
+#footercol
+{
+    height: 100px;
+    width: 150px;
+    padding-right: 10px;
+    object-fit: cover;
+    object-position: 0px -10px;
+}
+
+
+#footermsr
+{
+    height: 90px;
+    width: 120px;
+    object-fit: contain;
+    padding-right: 10px;
+}
+
+#footervibe
+{
+    height: 80px;
+    width: 120px;
+    object-fit: contain;
     padding-right: 10px;
     filter: invert(1);
 }
+
+#footercomp > li > a:hover
+{
+    color:goldenrod
+}
+
 
 #footercomp
 {
