@@ -77,20 +77,24 @@ a
     color: white;
     justify-content: space-between;
 }
-.footersp
+
+.footersp > p > a
 {
+    color: white;
     font-size: 20px;
 }
+
 
 #footerresource
 {
     list-style-type: none;
     font-size: 20px;
     padding: 0;
+    padding-right: 55px;
 }
 #footerresource > li > a
 {
-    font-size: 15px;
+    font-size: 18px;
     color: white;
 }
 
@@ -99,6 +103,7 @@ a
     list-style-type: none;
     padding: 0;
 }
+
 
 #footersp > li
 {
@@ -121,7 +126,7 @@ a
 
 #footercomp > li > a
 {
-    font-size: 15px;
+    font-size: 18px;
     color: white;
 }
 
@@ -144,7 +149,7 @@ a
 {
     color: white;
     margin-left: 10px;
-    font-size: 13px;
+    font-size: 18px;
     flex-grow: 1;
 }
 
@@ -152,7 +157,7 @@ a
 {
     color: white;
     margin-left: 20px;
-    font-size: 13px;
+    font-size: 18px;
 }
 
 #footer4 > a > img
