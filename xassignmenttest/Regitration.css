@@ -4,39 +4,15 @@ body
     margin: 0;
 }
 
-
-#banner
+.masuksini1
 {
-    font-family: NewFont;
-    background-image: url('bannerLangkawi.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 90%;
     width: 100%;
-    height: 500px;
-    margin: 0%;
-    display: flex;
-    align-items: center;
+    background-color: darkslategray;
 }
-
-#banner #greeting {
-    color: #ffffff;
-    font-size: 50px;
-    text-align: left;
-    max-width: 600px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    padding: 0px 50px 200px 100px;
-    line-height: 25px;      
-
-}
-
-#undertext {
-    font-size: 20px;
-    padding-left: 30px;
-}
-
-br {
-    padding: 0;
+.masuksini1 > img
+{
+    max-height: 100%;
+    max-width: 100%;
 }
 
 
@@ -45,7 +21,7 @@ br {
 
 header
 {
-    padding: 10px 50px 10px 50px;
+    padding: 10px 0px 10px 50px;
     background-color: white;
     display: flex;
     font-family: NewFont;
@@ -69,6 +45,7 @@ a
 #headernav
 {
     font-size: 18px;
+    padding-right: 100px;
 }
 
 #headernav > a
