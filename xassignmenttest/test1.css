@@ -36,6 +36,11 @@ a
     text-decoration: none;
 }
 
+a:hover
+{
+    color: goldenrod;
+}
+
 #headermain > img
 {
     height: 60px;
@@ -89,19 +94,29 @@ footer
     font-size: 20px;
 }
 
+.footersp > p > a:hover
+{
+    color: goldenrod;
+}
 
 #footerresource
 {
     list-style-type: none;
     font-size: 20px;
     padding: 0;
-    padding-right: 55px;
+    padding-right: 60px;
 }
 #footerresource > li > a
 {
     font-size: 18px;
     color: white;
 }
+
+#footerresource > li > a:hover
+{
+    color: goldenrod;
+}
+
 
 #footersp
 {
@@ -110,15 +125,43 @@ footer
 }
 
 
+
 #footersp > li
 {
     display:inline;
 }
 
-#footersp > li > img
+#footerapu 
 {
     height: 100px;
     padding-right: 10px;
+}
+
+#footercol
+{
+    height: 100px;
+    width: 150px;
+    padding-right: 10px;
+    object-fit: cover;
+    object-position: 0px -10px;
+}
+
+
+#footermsr
+{
+    height: 90px;
+    width: 120px;
+    object-fit: contain;
+    padding-right: 10px;
+}
+
+#footervibe
+{
+    height: 80px;
+    width: 120px;
+    object-fit: contain;
+    padding-right: 10px;
+    filter: invert(1);
 }
 
 #footercomp
@@ -134,6 +177,10 @@ footer
     color: white;
 }
 
+#footercomp > li > a:hover
+{
+    color:goldenrod
+}
 
 .footer2
 {
@@ -148,6 +195,11 @@ footer
 {
     height: 35px;
     filter: invert(1);
+}
+
+#footer1 > img:hover
+{
+    filter: invert(0);
 }
 
 #footer2
@@ -171,6 +223,12 @@ footer
     filter: invert(1);
     padding-left: 10px;
 }
+
+#footer4 > a > img:hover
+{
+    filter: invert(0);
+}
+
 
 @font-face
 {
