@@ -197,11 +197,6 @@ footer
     filter: invert(1);
 }
 
-#footer1 > img:hover
-{
-    filter: invert(0);
-}
-
 #footer2
 {
     color: white;
@@ -222,11 +217,6 @@ footer
     height: 18px;
     filter: invert(1);
     padding-left: 10px;
-}
-
-#footer4 > a > img:hover
-{
-    filter: invert(0);
 }
 
 
