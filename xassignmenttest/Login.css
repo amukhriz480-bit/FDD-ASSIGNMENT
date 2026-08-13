@@ -15,7 +15,7 @@ body::before {
     left: -1px;
 
 
-    background-image: url('bannerLangkawi.jpg'); 
+    background-image: url('media/bannerLangkawi.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
