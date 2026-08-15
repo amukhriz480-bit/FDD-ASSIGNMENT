@@ -25,13 +25,9 @@ body::before {
     background-repeat: no-repeat;
     background-position: center;
     filter: blur(5px); 
-    transform: scale(1.03); /* Prevents white blurred edges from showing on screen borders */
+    transform: scale(1.03);
     z-index: -1;
 }
-
-/* =========================================
-   HEADER STYLES
-   ========================================= */
 
 header {
     padding: 12px 60px;
